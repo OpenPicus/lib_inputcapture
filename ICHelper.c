@@ -175,7 +175,6 @@ int *IC_PORT[]={(int *)0x02C2,(int *)0x02CA,(int *)0x02D2,
 /***********ISR for input capture module 1 *********/
 void __attribute__((interrupt, no_auto_psv)) _IC1Interrupt(void)
 {
-	_dbgwrite("IC1");
     if(ic_cnt[IC1]==1)
             IEC0bits.IC1IE = 0;
     ic_index[IC1] = ic_cnt_index[IC1]-ic_cnt[IC1];
@@ -197,7 +196,6 @@ void __attribute__((interrupt, no_auto_psv)) _IC1Interrupt(void)
 /***********ISR for input capture module 2 *********/
 void __attribute__((interrupt, no_auto_psv)) _IC2Interrupt(void)
 {
-	_dbgwrite("IC2");
     if(ic_cnt[IC2]==1)
         IEC0bits.IC2IE = 0;
     ic_index[IC2] = ic_cnt_index[IC2]-ic_cnt[IC2];
@@ -212,7 +210,6 @@ void __attribute__((interrupt, no_auto_psv)) _IC2Interrupt(void)
 /***********ISR for input capture module 3 *********/
 void __attribute__((interrupt, no_auto_psv)) _IC3Interrupt(void)
 {
-	_dbgwrite("IC3");
     if(ic_cnt[IC3]==1)
         IEC2bits.IC3IE = 0;
     ic_index[IC3] = ic_cnt_index[IC3]-ic_cnt[IC3];
@@ -234,7 +231,6 @@ void __attribute__((interrupt, no_auto_psv)) _IC3Interrupt(void)
 /***********ISR for input capture module 4 *********/
 void __attribute__((interrupt, no_auto_psv)) _IC4Interrupt(void)
 {
-	_dbgwrite("IC4");
     if(ic_cnt[IC4]==1)
         IEC2bits.IC4IE = 0;
     ic_index[IC4] = ic_cnt_index[IC4]-ic_cnt[IC4];
@@ -249,7 +245,6 @@ void __attribute__((interrupt, no_auto_psv)) _IC4Interrupt(void)
 /***********ISR for input capture module 5 *********/
 void __attribute__((interrupt, no_auto_psv)) _IC5Interrupt(void)
 {
-	_dbgwrite("IC5");
     if(ic_cnt[IC5]==1)
         IEC2bits.IC5IE = 0;
     ic_index[IC5] = ic_cnt_index[IC5]-ic_cnt[IC5];
@@ -271,7 +266,6 @@ void __attribute__((interrupt, no_auto_psv)) _IC5Interrupt(void)
 /***********ISR for input capture module 6 *********/
 void __attribute__((interrupt, no_auto_psv)) _IC6Interrupt(void)
 {
-	_dbgwrite("IC6");
     if(ic_cnt[IC6]==1)
         IEC2bits.IC6IE = 0;
     ic_index[IC6] = ic_cnt_index[IC6]-ic_cnt[IC6];
@@ -286,7 +280,6 @@ void __attribute__((interrupt, no_auto_psv)) _IC6Interrupt(void)
 /***********ISR for input capture module 7 *********/
 void __attribute__((interrupt, no_auto_psv)) _IC7Interrupt(void)
 {
-	_dbgwrite("IC7");
     if(ic_cnt[IC7]==1)
         IEC1bits.IC7IE = 0;
     ic_index[IC7] = ic_cnt_index[IC7]-ic_cnt[IC7];
@@ -308,7 +301,6 @@ void __attribute__((interrupt, no_auto_psv)) _IC7Interrupt(void)
 /***********ISR for input capture module 8 *********/
 void __attribute__((interrupt, no_auto_psv)) _IC8Interrupt(void)
 {
-	_dbgwrite("IC8");
     if(ic_cnt[IC8]==1)
         IEC1bits.IC8IE = 0;
     ic_index[IC8] = ic_cnt_index[IC8]-ic_cnt[IC8];
@@ -323,7 +315,6 @@ void __attribute__((interrupt, no_auto_psv)) _IC8Interrupt(void)
 /***********ISR for input capture module 9 *********/
 void __attribute__((interrupt, no_auto_psv)) _IC9Interrupt(void)
 {
-	_dbgwrite("IC9");
     if(ic_cnt[IC9]==1)
         IEC5bits.IC9IE = 0;
     ic_index[IC9] = ic_cnt_index[IC9]-ic_cnt[IC9];
